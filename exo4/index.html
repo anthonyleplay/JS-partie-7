@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
+
 <head>
   <meta charset="utf-8" />
   <title>Exercice 4</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
   <img src="assets/img/la-nuit-etoilee.jpg" alt="La nuit étoilée - V. VAN GOGH" />
+
+
+
+  <script>
+    let idImg = document.getElementsByTagName("img")
+    idImg[0].addEventListener("click", zoomImg => {
+      if (idImg[0].style.width == "50%") {
+        idImg[0].style.width = "100%";
+      } else {
+        idImg[0].style.width = "50%";
+      }
+    });
+  </script>
 </body>
+
 </html>
