@@ -38,9 +38,9 @@
 
 
                 <form action="">
-                    <input type="number" id="firstNumber"> x
-                    <input type="number" id="secondNumber"> =
-                    <input type="number" id="answer" readonly="readonly">
+                    <input type="text" id="firstNumber"> x
+                    <input type="text" id="secondNumber"> =
+                    <input type="text" id="answer" readonly>
                     <button id="myButton" type="button">Résultat :</button>
                 </form>
 
@@ -54,10 +54,13 @@
         let idSecond = document.getElementById("secondNumber");
         let idAnswer = document.getElementById("answer");
         let idButton = document.getElementById("myButton");
-        idButton.addEventListener("click", funcMulti);
+        
+        idButton.addEventListener("click", function () {
+            funcMulti(idFirst.value, idSecond.value)
+        });
 
-        function funcMulti() {
-            idAnswer.value = (idFirst.value * idSecond.value).toString();
+        function funcMulti(a, b) {
+            idAnswer.value = (a * b);
         }
     </script>
 
