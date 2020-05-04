@@ -14,11 +14,12 @@
 
   <script>
     let idImg = document.querySelector("img")
-    idImg.addEventListener("click", zoomImg => {
-      if (idImg.style.width == "50%") {
-        idImg.style.width = "100%";
-      } else {
+    idImg.addEventListener("click", () => {
+
+      if (idImg.style.width == "100%") {
         idImg.style.width = "50%";
+      } else {
+        idImg.style.width = "100%";
       }
     });
   </script>

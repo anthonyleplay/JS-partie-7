@@ -54,13 +54,13 @@
         let idSecond = document.getElementById("secondNumber");
         let idAnswer = document.getElementById("answer");
         let idButton = document.getElementById("myButton");
-        
+
         idButton.addEventListener("click", function () {
             funcMulti(idFirst.value, idSecond.value)
         });
 
         function funcMulti(a, b) {
-            idAnswer.value = (a * b);
+           return idAnswer.value = (a * b);
         }
     </script>
 

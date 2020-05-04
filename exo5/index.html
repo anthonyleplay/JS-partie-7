@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>JS partie 7 exo 5</title>
+
+</head>
+
+
+<body class="bg-dark">
+    <div class="container bg-dark py-2">
+        <div class="row bg-light py-5 justify-content-center">
+            <div class="col-10">
+
+                <p class="h2">Partie 7 - Les fonctions</p>
+
+                <p class="h4"> Exercice 5</p>
+                <p>
+                    Traduire la fonction en fonction fléchée.<br><br>
+
+                    function getStringLength(string){<br>
+                    let stringLength;<br>
+                    if(string.length === 1){<br>
+                    stringLength = 'La chaîne contient qu'un seul caractère';<br>
+                    } else {<br>
+                    stringLength = `La chaîne contient ${string.length} caractères`;<br>
+                    }<br>
+                    return stringLength;<br>
+                    }<br>
+
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-dark py-2">
+        <div class="row bg-light py-5 justify-content-center">
+            <div class="col-10">
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        (string) => {
+            let stringLength;
+            if (string.length === 1) {
+                stringLength = 'La chaîne contient qu\'un seul caractère ';
+            } else {
+                stringLength = `La chaîne contient ${string.length} caractères`;
+            }
+            return stringLength;
+        }
+    </script>
+
+
+
+</body>
+
+</html>
